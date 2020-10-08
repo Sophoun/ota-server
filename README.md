@@ -44,5 +44,20 @@ $ node bin/ota-server
 # open https://ip:port on your iphone
 ```
 
+# Build docker image
+```
+$ docker build -t sophoun/ota-server .
+```
+
+# Run docker image
+```
+$ docker run -d \
+-e host_ip=[1.0.0.1] \
+-e port=[1234] \
+-p 1234:1234 \
+-v [absolute_path_ipa]:/app/ipa \
+-v [absolute_path_apk]:/app/apk sophoun/ota-server
+```
+
 # Lisence
 [MIT](https://github.com/bumaociyuan/zxIpaServer/blob/master/LICENSE.md)
