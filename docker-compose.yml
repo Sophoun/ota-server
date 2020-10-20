@@ -1,0 +1,13 @@
+version: '2'
+services:
+  ota-server:
+    image: 10.80.80.148:5000/sophoun/ota-server:latest 
+    volumes:
+      - /root/:/root/
+      - /srv/ota_share/ipa/:/app/ipa
+      - /srv/ota_share/apk/:/app/apk
+    ports:
+      - "1200:1200"
+    environment:
+      host_ip: 10.80.80.149
+      port: 1200
