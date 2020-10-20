@@ -53,8 +53,8 @@ $ docker build -t sophoun/ota-server .
 ```
 $ docker run -d \
 -e host_ip=[1.0.0.1] \
--e port=[1234] \
--p 1234:1234 \
+-e port=[1200] \
+-p 1200:1200 \
 -v [absolute_path_ipa]:/app/ipa \
 -v [absolute_path_apk]:/app/apk sophoun/ota-server
 ```

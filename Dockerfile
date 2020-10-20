@@ -1,7 +1,7 @@
 FROM node:12.18.1
 
 ENV host_ip=127.0.0.1
-ENV port=1234
+ENV port=1200
 
 # Create app directory
 WORKDIR /app
@@ -19,5 +19,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 1234
+EXPOSE 1200
 CMD node bin/ota-server.js -i ${host_ip} -p ${port}
