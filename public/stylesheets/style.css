@@ -1,14 +1,15 @@
 body {
-  padding: 10px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 10px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #0077FF;
-  text-decoration: none;
+	color: #0077FF;
+	text-decoration: none;
+	margin-left: 6px;
 }
 
-#qrcodeTable table{
+#qrcodeTable table {
 	margin: 0px auto;
 }
 
@@ -17,25 +18,25 @@ ul {
 }
 
 hr {
-	border:0.5px solid lightgray;
+	border: 0.5px solid lightgray;
 }
 
 li {
 	list-style-type: none;
 	margin: 0px;
 	display: -webkit-flex;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-between;
-  	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .info {
 	flex-grow: 2;
 	margin-left: 10px;
 	display: -webkit-flex;
-  	display: flex;
-  	flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 

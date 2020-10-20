@@ -34,7 +34,7 @@
                 <a href="ipa/{{name}}.ipa" class="link2">Download</a>
                 <a href="javascript:;"
                     downloadUrl="itms-services://?action=download-manifest&url=https://{{ip}}:{{port}}/plist/{{name}}"
-                    class="link">Download and install</a>
+                    class="link">Install</a>
             </li>
             <hr />
             {{/items_ios}}
@@ -47,7 +47,8 @@
                     <span class="name">{{name}}</span>
                     <div class="desc">{{description}}</div>
                 </div>
-                <a href="apk/{{name}}.apk" class="link2">Download and install</a>
+                <a href="apk/{{name}}.apk" class="link2">Download</a>
+                <a href="apk/{{name}}.apk" class="link2">Install</a>
             </li>
             <hr />
             {{/items_android}}
@@ -67,7 +68,8 @@
                     <span class="name">{{name}}</span>
                     <div class="desc">{{description}}</div>
                 </div>
-                <a href="apk/{{name}}.apk" class="link2">Download and install</a>
+                <a href="apk/{{name}}.apk" class="link2">Download</a>
+                <a href="apk/{{name}}.apk" class="link2">Install</a>
             </li>
             {{/history_android}}
         </ul>
@@ -81,9 +83,10 @@
                     <span class="name">{{name}}</span>
                     <div class="desc">{{description}}</div>
                 </div>
+                <a href="ipa/{{name}}.ipa" class="link2">Download</a>
                 <a href="javascript:;"
                     downloadUrl="itms-services://?action=download-manifest&url=https://{{ip}}:{{port}}/plist/{{name}}"
-                    class="link">Download and install</a>
+                    class="link">Install</a>
             </li>
             {{/history_ios}}
         </ul>
