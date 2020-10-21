@@ -13,6 +13,5 @@ services:
       port: 1200
     deploy:
       mode: replicated
-      replicas: 2
-    restart_policy:
-      condition: always
+      replicas: 1
+    restart: always
