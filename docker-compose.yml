@@ -1,4 +1,4 @@
-version: '2'
+version: '3.8'
 services:
   ota-server:
     image: 10.80.80.148:5000/sophoun/ota-server:latest 
@@ -11,3 +11,8 @@ services:
     environment:
       host_ip: 10.80.80.149
       port: 1200
+    deploy:
+      mode: replicated
+      replicas: 2
+    restart_policy:
+      condition: always
