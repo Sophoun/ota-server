@@ -1,4 +1,4 @@
-FROM node:12.18.1
+FROM node:14.14
 
 ENV host_ip=127.0.0.1
 ENV port=1200

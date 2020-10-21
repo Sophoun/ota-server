@@ -76,7 +76,7 @@ function before(obj, method, fn) {
   };
 }
 
-function main() {
+async function main() {
 
   console.log('https://' + ipAddress + ':' + port + '/download');
   //console.log(program.args);
@@ -92,7 +92,8 @@ function main() {
     key = fs.readFileSync(globalCerFolder + '/mycert1.key', 'utf8');
     cert = fs.readFileSync(globalCerFolder + '/mycert1.cer', 'utf8');
   } catch (e) {
-    var result = exec('sh  ' + path.join(__dirname, '..', 'generate-certificate.sh') + ' ' + ipAddress).output;
+    await exec("sed -i -e 's/\r$//' /app/generate-certificate.sh");
+    await exec('sh ' + path.join(__dirname, '..', 'generate-certificate.sh') + ' ' + ipAddress);
     key = fs.readFileSync(globalCerFolder + '/mycert1.key', 'utf8');
     cert = fs.readFileSync(globalCerFolder + '/mycert1.cer', 'utf8');
   }
